@@ -1,3 +1,28 @@
+## Heroku 
+
+Heroku is still not launching from a blank project, which means the issue wasn't any files in my old repo. 
+
+I changed the procfile from wed: gunicorn app.wsgi to gunicorn app.wsgi:application and got a new error set
+With the changes the application get as far as build succeeded, and the state gets from crashed to down, as opposed to before when the app went from starting to crashed instantly
+
+![Heroku errors set 2 item 1](./assets/images/readme-heroku-02.png)
+![Heroku errors set 2 item 2](./assets/images/readme-heroku-03.png)
+![Heroku errors set 2 item 3](./assets/images/readme-heroku-04.png)
+
+
+Now following this to try deploy in a different way https://realpython.com/django-hosting-on-heroku/
+This way changes the gunicorn boot to a python manage.py runserver
+
+
+
+
+
+
+
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome,
