@@ -32,9 +32,8 @@ I tried the solution here https://stackoverflow.com/questions/45228395/error-no-
 
 This also didn't work. 
 
-I moved on to this solution https://codevoid.io/hosting-a-python-web-service-in-gunicorn-and-docker.html#:~:text=Running%20Gunicorn%20natively&text=To%20run%20it%20natively%20you,it%20in%20Docker%20under%20Windows.
-
-
+Changed back to gunicorn launch in procfile, got no fnctl module error
+FNCTL is not availalbe to windows, must change gunicorn to waitress instead.
 
 
 
