@@ -13,9 +13,26 @@ With the changes the application get as far as build succeeded, and the state ge
 Now following this to try deploy in a different way https://realpython.com/django-hosting-on-heroku/
 This way changes the gunicorn boot to a python manage.py runserver
 
+This still throws a crashed application but the error still mentions looking for an app.wsgi 
+
+![Heroku errors set 3 item 1](./assets/images/readme-heroku-05.png)
+![Heroku errors set 3 item 2](./assets/images/readme-heroku-06.png)
+![Heroku errors set 3 item 3](./assets/images/readme-heroku-07.png)
 
 
+I tried running a local port to test this and got an address error 
 
+![Heroku local port error](./assets/images/readme-heroku-08.png)
+
+I changed the procfile back to a gunicorn app.wsgi call and got this error. Fnctl is not available on windows.
+
+![Heroku fnctl not found error](./assets/immages/readme-heroku-09.png)
+
+I tried the solution here https://stackoverflow.com/questions/45228395/error-no-module-named-fcntl
+
+This also didn't work. 
+
+I moved on to this solution https://codevoid.io/hosting-a-python-web-service-in-gunicorn-and-docker.html#:~:text=Running%20Gunicorn%20natively&text=To%20run%20it%20natively%20you,it%20in%20Docker%20under%20Windows.
 
 
 

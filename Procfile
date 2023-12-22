@@ -1,1 +1,1 @@
-web: python manage.py runserver 127.0.0.1\$PORT"
+waitress-serve --listen=*:8000 app.wsgi:application
